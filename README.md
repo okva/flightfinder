@@ -16,22 +16,27 @@ When we reach to the end, we can backtrack the fastest route.
 
 ## Scripts
 
-To build application 
+* Install dependencies
+```shell
+npm install
+```
+
+* Build application 
 ```shell
 npm run build-ts
 ```
 
-To generate .csv files. Files are already there so this can be skipped.
+* Generate .csv files. Files are already there so this can be skipped.
 ```shell
 npm run generate
 ```
 
-To test  application. Currently tests are using production data, try to avoid changing it.
+* Test  application. Currently tests are using production data, try to avoid changing it.
 ```shell
 npm run test
 ```
 
-To start application.
+* Start application.
 ```shell
 npm run start
 ```
