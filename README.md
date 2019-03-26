@@ -10,7 +10,7 @@ This application uses airports and flight database taken from https://openflight
 
 ## Dijkstra
 
-![Diagram](http://github.com/okva/flightfinder/blob/master/dijdiagram.png)
+![Diagram](https://github.com/okva/flightfinder/blob/master/dijdiagram.png)
 
 ## Scripts
 
