@@ -8,6 +8,9 @@ Rest service for finding shortest route from one airport to another. It takes so
 
 This application uses airports and flight database taken from https://openflights.org/data.html. Airports and routes from this page are used to generate own files. Distances between airports are calculated using <b>Haversine formula</b>. During generation duplicate flights are removed, only connection between airports is important. Database contains 7543 airports and 36528 unique routes. With this limited set of data I got 1ms pure calculation speed with 6 stops.
 
+## Dijkstra
+
+![Diagram](http://github.com/okva/flightfinder/blob/master/dijdiagram.png)
 
 ## Scripts
 
