@@ -44,7 +44,12 @@ export class RoutesCalculator {
 
         console.log('Calculate s:' + sou + ' d:' + dest + ' max:' + maxs);
 
-        const results = this.calculateRoute(sou, dest, maxs);
+        let results: number[];
+        try {
+            results = this.calculateRoute(sou, dest, maxs);
+        } catch (e) {
+            return {error: e.message};
+        }
         if (results.length === 0) {
             return {error: 'No flights found'};
         }
