@@ -1,5 +1,6 @@
 import csv from 'csv-parser';
 import * as fs from 'fs';
+import {Utils} from './Utils';
 
 export interface Route {
     from: number;
@@ -48,7 +49,7 @@ export class RoutesReader {
         this.routes.forEach((value) => {
             const oldDestinations = this.routesMap.get(value.from);
             // create 32bit uint where destination is 2 bytes and distance is 2 bytes
-            const dest: number = value.to << 16 | value.distance;
+            const dest: number = Utils.merge(value.to, value.distance);
             if (oldDestinations === undefined) {
                 this.routesMap.set(value.from, new Uint32Array([dest]));
             } else {
